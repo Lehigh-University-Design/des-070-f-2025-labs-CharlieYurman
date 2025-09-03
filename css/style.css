@@ -1,0 +1,45 @@
+:root {
+    --background-color: azure;
+    --light-color: #dfcaca;
+    --dark-color: #044546;
+    --link-color: #d987d6;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+main {
+    position: relative;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+#head { 
+    display: flex; 
+    justify-content: space-between;
+}
+
+#head h3 a {
+    color: var(--dark-color);
+    text-decoration: none; 
+}
+
+footer {
+    text-align: center;
+    justify-content: center;
+}
+
+/* our post class */
+.post{
+    border: 1px solid var(--dark-color); 
+    margin-bottom: 1em;
+    padding: .5em 1em;
+}
+
+.post a {
+    color: var(--link-color);
+    background-color: var(--light-color);
+    text-decoration: none;
+}
