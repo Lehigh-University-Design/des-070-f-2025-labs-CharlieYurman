@@ -1,6 +1,6 @@
 :root {
-    --background-color: azure;
-    --light-color: #dfcaca;
+    --background-color: rgb(172, 233, 233);
+    --light-color: #ecd9d9;
     --dark-color: #044546;
     --link-color: #d987d6;
 }
@@ -42,4 +42,24 @@ footer {
     color: var(--link-color);
     background-color: var(--light-color);
     text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+#post {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    margin-bottom: 1em;
+    padding: .5em 1em;
+}
+
+.special-headline {
+    font-weight: 900;
+    color: var(--link-color)
+}
+
+#unique-headline {
+    font-weight: 600;
+    color:rgb(231, 97, 97);
 }
