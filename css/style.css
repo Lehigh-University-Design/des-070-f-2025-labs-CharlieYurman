@@ -63,3 +63,116 @@ a:hover {
     font-weight: 600;
     color:rgb(231, 97, 97);
 }
+
+/* these styles are shared between .post and #post */
+.post, #post {
+    .img-container {
+        aspect-ratio: 3/2;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    a {
+        color: var(--link-color);
+        background-color: var(--light-color);
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+/* Lab 2 Styles */
+
+.hide-me {
+    display: none;
+}
+
+.post span {
+    color: aqua;
+}
+
+.block-div, .block {
+    display: block;
+    border-radius: 1em;
+    color: aqua;
+    background-color: black;
+    border: 1px solid var(--dark-color);
+    padding: 1em;
+}
+
+.block {
+    margin: 1em 0;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0.2em 0.8em;
+    color: var(--dark-color); 
+    background-color: #d987d6;
+}
+
+/* Positioning */
+
+.static {
+    position: static;
+    border: 1px solid var(--dark-color);
+}
+
+.fixed {
+    z-index: 999;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    width: 200px;
+    padding: 1em;
+    background-color: blueviolet;
+}
+
+.relative {
+    position: relative;
+    left: 1em;
+    width: calc(100% - 1em);
+    border: 1px solid var(--dark-color);
+}
+
+.absolute-demo-holder {
+    position: relative;
+    border: 1px solid var(--dark-color);
+    width: 100%;
+    margin-bottom: 1em;
+    aspect-ratio: 4/3;
+}
+
+.absolute-bubble {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 100px;
+    height: 100px;
+    background: #044546;
+    border-radius: 50px;
+
+    transform: translate(-50%, -50%); /* This is a shorthand of translateX(-50%) and translateY(-50%) */
+}
+
+.sticky-demo-holder {
+    overflow: scroll;
+    position: relative;
+    border: 1px solid var(--dark-color);
+    width: 100%;
+    margin-bottom: 1em;
+    height: 200px;
+    p {
+        margin: 1em;
+    }
+}
+

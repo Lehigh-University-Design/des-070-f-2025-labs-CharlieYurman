@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design 1 Labs CSS Exercise 1: Intro / Syntax / Selectors</title>
+<link rel="stylesheet"href="../css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <main>
+        <div id="head">
+            <div>
+                <h3><a href="../">DES 070 Labs</a></h3>
+            </div>
+            <div class="sub-head"><h3>CSS Exercise 2: Display & Position: Selectors</h3></div>
+        </div>
+        
+        <div class="post">
+            <h2>CSS Display & Position</h2>
+            <h3>Hdden</h3>
+            <div class="hidden">
+                <p>This is some hidden content</p>
+            </div>
+        </div>
+       
+        <h3>Block</h3>
+        <p>This display property specifies the display behavior (the type of rendering box) of an element</p>
+        <div class="block.div">
+            <p>This is a line of text defined by its parent container</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        <h3>Inline</h3>
+        <p>Lorem Ipsum <span class="Inline">This is an inline span</span>dolor sit amet 
+        <em>emphasis</em>consectetur <strong>Bold tet</strong> elit.</p>
+
+        <h3>Inline Block</h3>
+        <p> Lorem Ipsum <span class="inline.block">Inline Block!</span>Lorem ipsum blah blah blah.</p>
+        <p><a target="_blank" href="https://css-tricks.com">When to use inline-block?</a></p>
+
+    </div>
+
+    <div class="post">
+        <h2>CSS Positioning</h2>   
+        <p>Used to alter the element's natural layout flow position on the page and customize it according to our needs. It can be used to fix an element somewhere on the oage, give a relative or an absolute position, or no special position at all</p> 
+
+        <h3>Static</h3>
+        <p>Static positioned elements are not affected by the top, bottom, left, and right properties.</p>
+        <div class="static">This is a static positioned div</div>
+
+        <h3>Fixed</h3>
+        <div class="fixed">This is a fixed div</div>
+
+        <h3> Relative</h3>
+        <p>Relative is positioned relative to its normal position. It's used best when there's an ancestor with some position property as well and we can alter its final position. Otherwise, it's just like static</p>
+
+        <div class="relative">
+            This div element has position: relative;
+        </div>
+
+        <h3>Absolute</h3>
+        <p>Absolute behaves like fixed except relative to the nearest positioned ancestor instead of relative to thje viewport. If an absolutely-positioned element has no positioned ancestors, it uses the document body and still moves along with page scrolling.</p>
+
+        <div class="absolute-demo-holder">
+            <div class="absolute-bubble"></div>
+
+    </div>
+
+    
+        
+        <footer>
+            <p>Copyright: DES 070. Made with love.</p>
+        </footer>
+
+    </main>
+</body>
+</html>
